@@ -226,7 +226,7 @@ def run_test(f, dcstr=[], dcix=[], raise_errors=True):
             # If there are no exceptions, we check that the answer is correct
             try: 
 
-                assert "\n".join(fnc.fptr.get_answers()) == c["outputs"]
+                assert "\n".join(fnc.fptr.get_answers()).strip() == c["outputs"].strip()
 
                 print("Success")
 

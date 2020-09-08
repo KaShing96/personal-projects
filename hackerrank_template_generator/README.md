@@ -1,11 +1,19 @@
-# HackerRank Coding Template Version 4.0
- - [X] We attempt to improve the modularity of the code from 3.0. 
- - [X] Furthermore, instead of editing existing files, we will generate a new file in the desired location. 
+# HackerRank Template Generator v5.0
 
-## Problems
-Currently, for security reasons, we do not add the absolute path of the destination to the configs.json or to the script. Thus, we are unable to locate python/hackerrank to create the new folder as we do not want to assume folder creation in a folder arbitrarily 2 levels higher. Instead, for consistency, the new folder will be created in this subdirectory.
+## Changes from v4.0
+1. [ ] Removal of verification cases
+ The verifications folder has been removed, to emphasise the need for a proof-of-concept code using the cases in `test_cases`.
 
-The script also fails in extracting sample cases for certain HackerRank challenges, such as the one [here](https://www.hackerrank.com/challenges/anagram/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign).
+1. [x] Sample cases
+ Sample cases will be directly downloaded from HackerRank, with the download stored in RAM to avoid writing to memory. This overcomes certain problems with scraping the page for sample test cases.
+
+1. [x] Difficulty level
+ Challenges will be automatically added to their relevant difficulty folders. 
+
+## Resources
+* [Downloading file using `requests` directly to memory](https://stackoverflow.com/questions/22340265/python-download-file-using-requests-directly-to-memory)
+* [Downloading and unzipping a zip file without writing to disk](https://stackoverflow.com/questions/5710867/downloading-and-unzipping-a-zip-file-without-writing-to-disk)
 
 ## Instructions
-Simply run python setup.py "link", replacing 'link' with the link to the HackerRank page containing the challenge. This has not been proven to work on all HackerRank challenges. 
+Simply run `python download.py "link"`, replacing 'link' with the link to the HackerRank page containing the challenge. 
+This has not been proven to work on all HackerRank challenges. 

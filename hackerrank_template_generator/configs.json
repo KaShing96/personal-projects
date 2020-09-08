@@ -1,4 +1,5 @@
 {
-    "language": "Python 3",
-    "destination": "python\\hackerrank"
+    "website_name": "HackerRank",
+    "website_link": "http://hackerrank.com",
+    "language": "Python 3"
 }

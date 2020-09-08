@@ -68,7 +68,7 @@ class Writer():
 
     def close(self):
         pass
-        
+
 
 fptr = Writer()
 
